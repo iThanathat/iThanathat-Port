@@ -1,8 +1,8 @@
-# iThanathat's Port
-- This project is for create my personal portfolio with Next.js with typescript
+# iThanathat's Space
+- This project is for create my personal space with Next.js with typescript
 
 ## How to run this project
 - Clone this project
-- cd `ithanathat-port`
+- cd `ithanathat-space`
 - Run `npm install`
 - Run `npm run dev`

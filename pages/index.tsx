@@ -2,14 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>iThanathat's Space</title>
+        <title>{`iThanathat's Space`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="iThanathat's Personal Space" />
         <link rel="icon" href="/favicon.ico" />
@@ -27,10 +27,10 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        <div className="p-2 w-1/2 h-full bg-primary flex flex-col justify-center" style={{wordBreak: 'break-word'}}>
+        <div className="p-6 w-1/2 h-full bg-primary flex flex-col justify-center" style={{wordBreak: 'break-word'}}>
           <div className="m-auto">
-            <h1 className="text-4xl">Hi, I'm <strong className="text-primary-content">Brain</strong> 👋🏼</h1>
-            <h1 className="text-4xl font-bold text-primary-content mt-4">Welcome to iThanathat's Space.</h1>
+            <h1 className="text-4xl">{`Hi, I'm`} <strong className="text-primary-content">Brain</strong> 👋🏼</h1>
+            <h1 className="text-4xl font-bold text-primary-content mt-4">{`Welcome to iThanathat's Space.`}</h1>
             <div className="mt-4">
               <div className="text-primary-content flex items-center">
                 <p>💻</p>
@@ -56,6 +56,9 @@ const Home: NextPage = () => {
               </Link>
               <Link href={`https://www.instagram.com/ithanathat/`}>
                 <FontAwesomeIcon icon={faInstagram} size="2x" className="cursor-pointer"/>
+              </Link>
+              <Link href={`https://www.linkedin.com/in/thanathat-surakhup-275200190/`}>
+                <FontAwesomeIcon icon={faLinkedin} size="2x" className="cursor-pointer"/>
               </Link>
             </div>
           </div>

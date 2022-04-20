@@ -6,7 +6,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedin } from '@fortawesome/free
 const Introduction = () => {
   return (
     <div className="h-screen flex items-center justify-center">
-      <div className="container p-2 w-1/2 bg-white">
+      <div className="container p-2 w-1/2">
         <div className="text-center">
           <Image
             src="/images/Me.JPG"
@@ -39,16 +39,16 @@ const Introduction = () => {
           </div>
           <div className="flex justify-evenly mt-6">
             <Link href={`https://github.com/iThanathat`}>
-              <FontAwesomeIcon icon={faGithub} size="2x" className="cursor-pointer"/>
+              <FontAwesomeIcon icon={faGithub} size="2x" className="cursor-pointer text-primary-content"/>
             </Link>
             <Link href={`https://www.facebook.com/ithanathat`}>
-              <FontAwesomeIcon icon={faFacebook} size="2x" className="cursor-pointer"/>
+              <FontAwesomeIcon icon={faFacebook} size="2x" className="cursor-pointer text-primary-content"/>
             </Link>
             <Link href={`https://www.instagram.com/ithanathat/`}>
-              <FontAwesomeIcon icon={faInstagram} size="2x" className="cursor-pointer"/>
+              <FontAwesomeIcon icon={faInstagram} size="2x" className="cursor-pointer text-primary-content"/>
             </Link>
             <Link href={`https://www.linkedin.com/in/thanathat-surakhup-275200190/`}>
-              <FontAwesomeIcon icon={faLinkedin} size="2x" className="cursor-pointer"/>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" className="cursor-pointer text-primary-content"/>
             </Link>
           </div>
         </div>

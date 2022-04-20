@@ -15,8 +15,8 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
       className={'w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10'}
     >
       <div className="flex justify-center items-center p-2">
-        <div className="flex items-center">
-          <Link href={'/'} passHref>
+        <Link href="/" passHref>
+          <div className="flex items-center">
             <>
               <Image
                 src="/images/AnimojiMe.png"
@@ -33,8 +33,8 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
                 Thanathat Surakhup
               </p>
             </>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="ml-4">
           <Link href={'/experiences'} passHref>
             <p

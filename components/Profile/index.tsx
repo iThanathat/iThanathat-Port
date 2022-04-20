@@ -11,7 +11,7 @@ import {
 
 const Profile = () => {
   return (
-    <div className="h-screen flex justify-center">
+    <div className="h-screen flex items-center justify-center">
       <div className="container h-full flex flex-col justify-center p-6 w-1/2 bg-secondary">
         <div className="m-auto">
           <h1 className="text-4xl text-secondary-content">Personal Info </h1>
@@ -47,7 +47,7 @@ const Profile = () => {
             />
           </div>
           <div className="flex flex-col mt-6">
-            <Link href={'https://github.com/iThanathat'}>
+            <Link href={'https://github.com/iThanathat'} passHref>
               <div className="flex items-center cursor-pointer">
                 <FontAwesomeIcon
                   icon={faGithub}
@@ -60,7 +60,7 @@ const Profile = () => {
               </div>
             </Link>
             <br />
-            <Link href={'https://www.facebook.com/ithanathat'}>
+            <Link href={'https://www.facebook.com/ithanathat'} passHref>
               <div className="flex items-center cursor-pointer">
                 <FontAwesomeIcon
                   icon={faFacebook}
@@ -73,7 +73,7 @@ const Profile = () => {
               </div>
             </Link>
             <br />
-            <Link href={'https://www.instagram.com/ithanathat'}>
+            <Link href={'https://www.instagram.com/ithanathat'} passHref>
               <div className="flex items-center cursor-pointer">
                 <FontAwesomeIcon
                   icon={faInstagram}
@@ -88,6 +88,7 @@ const Profile = () => {
             <br />
             <Link
               href={'https://www.linkedin.com/in/thanathat-surakhup-275200190/'}
+              passHref
             >
               <div className="flex items-center cursor-pointer">
                 <FontAwesomeIcon

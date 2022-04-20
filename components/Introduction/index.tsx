@@ -55,21 +55,21 @@ const Introduction = () => {
             </div>
           </div>
           <div className="flex justify-evenly mt-6">
-            <Link href={'https://github.com/iThanathat'}>
+            <Link href={'https://github.com/iThanathat'} passHref>
               <FontAwesomeIcon
                 icon={faGithub}
                 size="2x"
                 className="cursor-pointer text-primary-content"
               />
             </Link>
-            <Link href={'https://www.facebook.com/ithanathat'}>
+            <Link href={'https://www.facebook.com/ithanathat'} passHref>
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="2x"
                 className="cursor-pointer text-primary-content"
               />
             </Link>
-            <Link href={'https://www.instagram.com/ithanathat/'}>
+            <Link href={'https://www.instagram.com/ithanathat/'} passHref>
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="2x"
@@ -78,6 +78,7 @@ const Introduction = () => {
             </Link>
             <Link
               href={'https://www.linkedin.com/in/thanathat-surakhup-275200190/'}
+              passHref
             >
               <FontAwesomeIcon
                 icon={faLinkedin}

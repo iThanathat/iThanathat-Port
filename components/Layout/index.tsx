@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import {useState} from 'react';
+import Footer from '../Footer';
 import NavBar from '../NavBar';
 
 type LayoutProps = {
@@ -26,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({children}) => {
         onToggleTheme={() => setIsDarkTheme(!isDarkTheme)}
       />
       {children}
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import type {NextPage} from 'next';
+import {NextPage} from 'next';
 import Layout from '../components/Layout';
 import Introduction from '../components/Introduction';
 import Profile from '../components/Profile';
@@ -6,8 +6,10 @@ import Profile from '../components/Profile';
 const Home: NextPage = () => {
   return (
     <Layout>
-      <Introduction />
-      <Profile />
+      <div className="mt-12">
+        <Introduction />
+        <Profile />
+      </div>
     </Layout>
   );
 };

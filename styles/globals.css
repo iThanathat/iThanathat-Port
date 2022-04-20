@@ -18,3 +18,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+[data-theme="night"] {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+[data-theme="corporate"] {
+  @apply transition-colors duration-300 ease-in-out;
+}

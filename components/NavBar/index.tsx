@@ -5,11 +5,29 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type NavBarProps = {
-  isDarkTheme: boolean;
+  theme: "night" | "corporate";
   onToggleTheme: () => void;
+  path: string;
 };
 
-const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
+type NavLinkProps = {
+  children: React.ReactNode;
+  href: string;
+  path: string;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
+  const active = path === href
+  return (
+    <div className={`${active ? 'active' : 'inactive'}`}>
+      <Link href={href} passHref>
+        {children}
+      </Link>
+    </div>
+  )
+}
+
+const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
   return (
     <div
       className={'w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10'}
@@ -27,7 +45,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
               />
               <p
                 className={`text-xl ${
-                  isDarkTheme ? 'text-white' : 'text-black'
+                  theme === 'night' ? 'text-white' : 'text-black'
                 } cursor-pointer`}
               >
                 Thanathat Surakhup
@@ -36,15 +54,27 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
           </div>
         </Link>
         <div className="ml-4">
-          <Link href={'/experiences'} passHref>
+          <NavLink
+            path={path}
+            href="/experiences"
+          >
             <p
               className={`text-xl ${
-                isDarkTheme ? 'text-white' : 'text-black'
+                theme === 'night' ? 'text-white' : 'text-black'
+              } cursor-pointer hover:underline mx-2`}
+            >
+              Experiences
+            </p>
+          </NavLink>
+          {/* <Link href={'/experiences'} passHref>
+            <p
+              className={`text-xl ${
+                theme === 'night' ? 'text-white' : 'text-black'
               } cursor-pointer hover:underline`}
             >
               Experiences
             </p>
-          </Link>
+          </Link> */}
         </div>
         <div className="ml-6">
           <Link
@@ -57,12 +87,12 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
                   icon={faGithub}
                   size="2x"
                   className={`text-primary-content ${
-                    isDarkTheme ? 'text-white' : 'text-black'
+                    theme === 'night' ? 'text-white' : 'text-black'
                   }`}
                 />
                 <p
                   className={`ml-2 text-xl ${
-                    isDarkTheme ? 'text-white' : 'text-black'
+                    theme === 'night' ? 'text-white' : 'text-black'
                   } cursor-pointer hover:underline`}
                 >
                   Source
@@ -73,10 +103,10 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, isDarkTheme}) => {
         </div>
         <div onClick={() => onToggleTheme()} className="ml-6 cursor-pointer">
           <FontAwesomeIcon
-            icon={!isDarkTheme ? SolidIcon.faMoon : SolidIcon.faSun}
+            icon={theme === 'corporate' ? SolidIcon.faMoon : SolidIcon.faSun}
             size="2x"
             className={`text-xl ${
-              isDarkTheme ? 'text-white' : 'text-black'
+              theme === 'night' ? 'text-white' : 'text-black'
             } transition ease-in duration-300`}
           />
         </div>

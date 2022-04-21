@@ -1,15 +1,21 @@
 import {NextPage} from 'next';
-import Layout from '../components/Layout';
+import {motion} from 'framer-motion';
 import Introduction from '../components/Introduction';
 import Profile from '../components/Profile';
+import Layout from '../components/Layouts/page';
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <div className="mt-12">
+      <motion.div
+        initial="initial"
+        animate="animate"
+        exit={{opacity: 0}}
+        className="mt-12"
+      >
         <Introduction />
         <Profile />
-      </div>
+      </motion.div>
     </Layout>
   );
 };

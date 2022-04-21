@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type NavBarProps = {
-  theme: "night" | "corporate";
+  theme: 'night' | 'corporate';
   onToggleTheme: () => void;
   path: string;
 };
@@ -14,18 +14,18 @@ type NavLinkProps = {
   children: React.ReactNode;
   href: string;
   path: string;
-}
+};
 
 const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
-  const active = path === href
+  const active = path === href;
   return (
     <div className={`${active ? 'active' : 'inactive'}`}>
       <Link href={href} passHref>
         {children}
       </Link>
     </div>
-  )
-}
+  );
+};
 
 const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
   return (
@@ -54,10 +54,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           </div>
         </Link>
         <div className="ml-4">
-          <NavLink
-            path={path}
-            href="/experiences"
-          >
+          <NavLink path={path} href="/experiences">
             <p
               className={`text-xl ${
                 theme === 'night' ? 'text-white' : 'text-black'

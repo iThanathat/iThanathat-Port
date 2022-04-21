@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { NextRouter } from 'next/router';
-import { useEffect } from 'react';
+import {NextRouter} from 'next/router';
+import {useEffect} from 'react';
 import {useState} from 'react';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
@@ -11,15 +11,15 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({children, router}) => {
-  const [theme, setTheme] = useState<'night' | 'corporate'>("corporate");
+  const [theme, setTheme] = useState<'night' | 'corporate'>('corporate');
 
   useEffect(() => {
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
       if (currentTheme === 'night') {
-        setTheme("night");
+        setTheme('night');
       } else {
-        setTheme("corporate");
+        setTheme('corporate');
       }
     } else {
       localStorage.setItem('theme', 'corporate');
@@ -27,15 +27,15 @@ const Layout: React.FC<LayoutProps> = ({children, router}) => {
   }, []);
 
   const onToggleTheme = () => {
-    setTheme(theme === "night" ? "corporate" : "night");
-    localStorage.setItem('theme', `${theme === "night" ? "corporate" : "night"}`);
-  }
+    setTheme(theme === 'night' ? 'corporate' : 'night');
+    localStorage.setItem(
+      'theme',
+      `${theme === 'night' ? 'corporate' : 'night'}`
+    );
+  };
 
   return (
-    <div
-      data-theme={theme}
-      className="overflow-scroll"
-    >
+    <div data-theme={theme} className="overflow-scroll">
       <Head>
         <title>{"iThanathat's Space"}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

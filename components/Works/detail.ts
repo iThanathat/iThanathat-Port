@@ -17,4 +17,4 @@ export const WorksDetail = [
     title: 'BillPouch',
     description: '',
   },
-]
+];

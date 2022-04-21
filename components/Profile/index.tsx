@@ -48,58 +48,66 @@ const Profile = () => {
           </div>
           <div className="flex flex-col mt-6">
             <Link href={'https://github.com/iThanathat'} passHref>
-              <div className="flex items-center cursor-pointer">
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  size="2x"
-                  className="text-primary-content"
-                />
-                <p className="ml-6 text-xl text-secondary-content">
-                  https://github.com/iThanathat
-                </p>
-              </div>
+              <a target="_blank">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    size="2x"
+                    className="text-primary-content"
+                  />
+                  <p className="ml-6 text-xl text-secondary-content">
+                    https://github.com/iThanathat
+                  </p>
+                </div>
+              </a>
             </Link>
             <br />
             <Link href={'https://www.facebook.com/ithanathat'} passHref>
-              <div className="flex items-center cursor-pointer">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  size="2x"
-                  className="text-primary-content"
-                />
-                <p className="ml-6 text-xl text-secondary-content">
-                  https://www.facebook.com/ithanathat
-                </p>
-              </div>
+              <a target="_blank">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="2x"
+                    className="text-primary-content"
+                  />
+                  <p className="ml-6 text-xl text-secondary-content">
+                    https://www.facebook.com/ithanathat
+                  </p>
+                </div>
+              </a>
             </Link>
             <br />
-            <Link href={'https://www.instagram.com/ithanathat'} passHref>
-              <div className="flex items-center cursor-pointer">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="2x"
-                  className="text-primary-content"
-                />
-                <p className="ml-6 text-xl text-secondary-content">
-                  https://www.instagram.com/ithanathat
-                </p>
-              </div>
+            <Link href={'https://instagram.com/ithanathat'} passHref>
+              <a target="_blank">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="2x"
+                    className="text-primary-content"
+                  />
+                  <p className="ml-6 text-xl text-secondary-content">
+                    @ithanathat
+                  </p>
+                </div>
+              </a>
             </Link>
             <br />
             <Link
               href={'https://www.linkedin.com/in/thanathat-surakhup-275200190/'}
               passHref
             >
-              <div className="flex items-center cursor-pointer">
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="2x"
-                  className="text-primary-content"
-                />
-                <p className="ml-6 text-xl text-secondary-content">
-                  https://www.linkedin.com/in/thanathat-surakhup-275200190
-                </p>
-              </div>
+              <a target="_blank">
+                <div className="flex items-center cursor-pointer">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="2x"
+                    className="text-primary-content"
+                  />
+                  <p className="ml-6 text-xl text-secondary-content">
+                    https://www.linkedin.com/in/thanathat-surakhup-275200190
+                  </p>
+                </div>
+              </a>
             </Link>
           </div>
         </div>

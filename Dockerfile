@@ -7,7 +7,6 @@ FROM node:lts as builder
 WORKDIR /iThanathat-Space
 COPY . .
 COPY --from=dependencies /iThanathat-Space/node_modules ./node_modules
-RUN npm run fix
 RUN npm run build
 
 FROM node:lts as runner

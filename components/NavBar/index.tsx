@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type NavBarProps = {
-  theme: 'night' | 'corporate';
+  theme: 'dark' | 'corporate';
   onToggleTheme: () => void;
   path: string;
 };
@@ -45,7 +45,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
               />
               <p
                 className={`text-xl ${
-                  theme === 'night' ? 'text-white' : 'text-black'
+                  theme === 'dark' ? 'text-white' : 'text-black'
                 } cursor-pointer`}
               >
                 Thanathat Surakhup
@@ -57,7 +57,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           <NavLink path={path} href="/experiences">
             <p
               className={`text-xl ${
-                theme === 'night' ? 'text-white' : 'text-black'
+                theme === 'dark' ? 'text-white' : 'text-black'
               } cursor-pointer hover:underline mx-2`}
             >
               Experiences
@@ -66,7 +66,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           {/* <Link href={'/experiences'} passHref>
             <p
               className={`text-xl ${
-                theme === 'night' ? 'text-white' : 'text-black'
+                theme === 'dark' ? 'text-white' : 'text-black'
               } cursor-pointer hover:underline`}
             >
               Experiences
@@ -84,12 +84,12 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
                   icon={faGithub}
                   size="2x"
                   className={`text-primary-content ${
-                    theme === 'night' ? 'text-white' : 'text-black'
+                    theme === 'dark' ? 'text-white' : 'text-black'
                   }`}
                 />
                 <p
                   className={`ml-2 text-xl ${
-                    theme === 'night' ? 'text-white' : 'text-black'
+                    theme === 'dark' ? 'text-white' : 'text-black'
                   } cursor-pointer hover:underline`}
                 >
                   Source
@@ -103,7 +103,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
             icon={theme === 'corporate' ? SolidIcon.faMoon : SolidIcon.faSun}
             size="2x"
             className={`text-xl ${
-              theme === 'night' ? 'text-white' : 'text-black'
+              theme === 'dark' ? 'text-white' : 'text-black'
             } transition ease-in duration-300`}
           />
         </div>

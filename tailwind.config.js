@@ -25,6 +25,23 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['corporate', 'night'],
+    themes: [
+      {
+        corporate: {
+          ...require('daisyui/src/colors/themes')['[data-theme=corporate]'],
+          primary: '#a0ebff',
+          'primary-content': '#000000',
+          'primary-focus': '#0014d0',
+        },
+      },
+      {
+        dark: {
+          ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
+          primary: 'rgb(255, 240, 116)',
+          'primary-content': '#000000',
+          'primary-focus': '#0014d0',
+        },
+      },
+    ],
   },
 };

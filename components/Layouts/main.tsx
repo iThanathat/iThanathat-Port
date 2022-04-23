@@ -11,13 +11,13 @@ type LayoutProps = {
 };
 
 const Layout: React.FC<LayoutProps> = ({children, router}) => {
-  const [theme, setTheme] = useState<'night' | 'corporate'>('corporate');
+  const [theme, setTheme] = useState<'dark' | 'corporate'>('corporate');
 
   useEffect(() => {
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
-      if (currentTheme === 'night') {
-        setTheme('night');
+      if (currentTheme === 'dark') {
+        setTheme('dark');
       } else {
         setTheme('corporate');
       }
@@ -27,11 +27,8 @@ const Layout: React.FC<LayoutProps> = ({children, router}) => {
   }, []);
 
   const onToggleTheme = () => {
-    setTheme(theme === 'night' ? 'corporate' : 'night');
-    localStorage.setItem(
-      'theme',
-      `${theme === 'night' ? 'corporate' : 'night'}`
-    );
+    setTheme(theme === 'dark' ? 'corporate' : 'dark');
+    localStorage.setItem('theme', `${theme === 'dark' ? 'corporate' : 'dark'}`);
   };
 
   return (

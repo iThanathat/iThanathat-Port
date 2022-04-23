@@ -19,7 +19,7 @@ a {
   box-sizing: border-box;
 }
 
-[data-theme="night"] {
+[data-theme="dark"] {
   @apply transition duration-300 ease-in-out;
 }
 

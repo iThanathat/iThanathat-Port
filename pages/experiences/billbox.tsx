@@ -11,7 +11,7 @@ const BillBox: NextPage = () => {
         exit={{opacity: 0}}
         className="mt-12"
       >
-        
+        BillBox
       </motion.div>
     </Layout>
   );

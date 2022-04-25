@@ -24,7 +24,7 @@ const Introduction = () => {
         <div className="flex flex-col justify-between h-full">
           <div
             className="relative top-1/2 w-fit-content cursor-pointer"
-            style={{left: '110%'}}
+            style={{left: '105%'}}
             onClick={() => setCurrentPage(2)}
           >
             <FontAwesomeIcon
@@ -122,7 +122,7 @@ const Introduction = () => {
         className="container px-28 py-14 w-1/2 h-full bg-primary"
         style={{wordBreak: 'break-word'}}
       >
-        <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col h-full">
           <div
             className="relative top-1/2 right-16 w-fit-content text-left cursor-pointer"
             onClick={() => setCurrentPage(1)}
@@ -133,7 +133,7 @@ const Introduction = () => {
               className="text-secondary"
             />
           </div>
-          <div className="flex flex-col my-auto">
+          <div className="flex flex-col justify-evenly h-full">
             <motion.div
               className="text-primary-content"
               initial={{opacity: 0}}
@@ -141,26 +141,6 @@ const Introduction = () => {
               exit={{opacity: 0}}
             >
               <h1 className="text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
-                Personal Info
-              </h1>
-              <List className="list-disc list-inside">
-                <ListItem className="text-2xl">
-                  Full Name: Thanathat Surakhup
-                </ListItem>
-                <ListItem className="text-2xl">
-                  Date of Birth: 5th August of 1996
-                </ListItem>
-                <ListItem className="text-2xl">Part-time Photographer</ListItem>
-                <ListItem className="text-2xl">Tel: 080-988-7239</ListItem>
-              </List>
-            </motion.div>
-            <motion.div
-              className="text-primary-content"
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              exit={{opacity: 0}}
-            >
-              <h1 className="mt-4 text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
                 Why iThanathat ?
               </h1>
               <div>
@@ -171,6 +151,22 @@ const Introduction = () => {
                   `}
                 </p>
               </div>
+            </motion.div>
+            <motion.div
+              className="text-primary-content"
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              exit={{opacity: 0}}
+            >
+              <h1 className="mt-4 text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
+                Personal Info
+              </h1>
+              <List className="list-disc list-inside">
+                <ListItem className="text-2xl">
+                  Full Name: Thanathat Surakhup
+                </ListItem>
+                <ListItem className="text-2xl">Part-time Photographer</ListItem>
+              </List>
             </motion.div>
           </div>
         </div>

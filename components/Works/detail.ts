@@ -8,7 +8,7 @@ export const WorksDetail = [
   },
   {
     href: '/experiences/billbox',
-    imageSrc: '/images/billbox-website.png',
+    imageSrc: '/images/billbox-website-2.png',
     alt: 'billbox-website',
     title: 'BillBox',
     description: '',

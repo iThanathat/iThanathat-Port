@@ -23,7 +23,8 @@ const Introduction = () => {
       >
         <div className="flex flex-col justify-between h-full">
           <div
-            className="relative top-1/2 h-fit-content text-right left-16 cursor-pointer"
+            className="relative top-1/2 w-fit-content cursor-pointer"
+            style={{left: '110%'}}
             onClick={() => setCurrentPage(2)}
           >
             <FontAwesomeIcon
@@ -51,10 +52,6 @@ const Introduction = () => {
                 <p className="text-2xl">
                   Software engineer based in Bangkok, Thailand.
                 </p>
-              </div>
-              <div className="text-primary-content flex items-center mt-1">
-                {/* <p className="text-2xl">📸</p> */}
-                {/* <p className="text-xl">Part-time Photographer.</p> */}
               </div>
               <div className="text-primary-content flex items-center mt-1">
                 {/* <p className="text-2xl">💼</p> */}
@@ -127,7 +124,7 @@ const Introduction = () => {
       >
         <div className="flex flex-col justify-between h-full">
           <div
-            className="relative top-1/2 right-16 h-fit-content text-left cursor-pointer"
+            className="relative top-1/2 right-16 w-fit-content text-left cursor-pointer"
             onClick={() => setCurrentPage(1)}
           >
             <FontAwesomeIcon
@@ -148,7 +145,7 @@ const Introduction = () => {
               </h1>
               <List className="list-disc list-inside">
                 <ListItem className="text-2xl">
-                  Name: Thanathat Surakhup
+                  Full Name: Thanathat Surakhup
                 </ListItem>
                 <ListItem className="text-2xl">
                   Date of Birth: 5th August of 1996
@@ -156,6 +153,24 @@ const Introduction = () => {
                 <ListItem className="text-2xl">Part-time Photographer</ListItem>
                 <ListItem className="text-2xl">Tel: 080-988-7239</ListItem>
               </List>
+            </motion.div>
+            <motion.div
+              className="text-primary-content"
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              exit={{opacity: 0}}
+            >
+              <h1 className="mt-4 text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
+                Why iThanathat ?
+              </h1>
+              <div>
+                <p className="text-xl text-primary-content mt-4 indent-10">
+                  {`
+                    iThanathat comes from the idea of the letter "i" in Apple products—e.g. iPhone, iMac, etc. And because I'm a fan of Apple products, so I combine
+                    my name with the letter "i". And that's iThanathat!
+                  `}
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>

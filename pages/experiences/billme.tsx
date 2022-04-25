@@ -28,7 +28,9 @@ const Billme: NextPage = () => {
                 <p>Back</p>
               </div>
             </Link>
-            <h1 className="text-2xl">Billme Landing Page</h1>
+            <h1 className="text-2xl mx-auto border-b w-fit-content font-bold">
+              Billme Landing Page
+            </h1>
             <p className="mt-4">
               This is a landing page for advertising
               <Link href="https://billbox.billme.co.th">
@@ -36,7 +38,14 @@ const Billme: NextPage = () => {
                   BillBox
                 </span>
               </Link>{' '}
-              application.
+              application. <br />
+              <div className="text-left mx-auto w-fit-content">
+                <p className="text-xl mt-4">My part in this website is:</p>
+                <List className="list-disc list-inside">
+                  <ListItem>Create entire structure of the website.</ListItem>
+                  <ListItem>Insert content of the website.</ListItem>
+                </List>
+              </div>
             </p>
             <List className="mt-4 m-auto w-fit-content">
               <ListItem className="flex">

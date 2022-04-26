@@ -28,9 +28,13 @@ a {
 }
 
 .active {
-  @apply bg-secondary border border-black rounded text-primary transition ease-in-out duration-300;
+  @apply bg-secondary border border-t-0 border-black text-primary transition ease-in-out duration-300;
 }
 
 .inactive {
-  @apply transition ease-in-out duration-300;
+  @apply transition ease-in-out duration-200;
+}
+
+.inactive:hover {
+  @apply underline;
 }

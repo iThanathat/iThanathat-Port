@@ -18,7 +18,7 @@ const Works = () => {
         ease: 'easeInOut',
       },
     },
-  }
+  };
 
   return (
     <div className="h-screen">

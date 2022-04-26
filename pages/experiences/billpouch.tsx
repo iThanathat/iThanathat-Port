@@ -32,16 +32,16 @@ const BillPouch: NextPage = () => {
               BillPouch
             </h1>
             <p className="mt-4 w-1/3 mx-auto text-left indent-10">
-            An application for receiving an invoice created by
-            <Link href="https://billbox.billme.co.th">
-              <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">
-                BillBox
-              </span>
-            </Link>{' '}
-            . Check invoices sent from the merchant,
-              and you can immediately pay and notify your merchant by uploading a payment slip.
-              And if your merchant integrates the system with a payment gateway,
-              you can get your transaction reconciled instantly at the moment.
+              An application for receiving an invoice created by
+              <Link href="https://billbox.billme.co.th">
+                <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">
+                  BillBox
+                </span>
+              </Link>{' '}
+              . Check invoices sent from the merchant, and you can immediately
+              pay and notify your merchant by uploading a payment slip. And if
+              your merchant integrates the system with a payment gateway, you
+              can get your transaction reconciled instantly at the moment.
               <div className="text-left mx-auto w-fit-content">
                 <p className="text-xl mt-4">My part in this website is:</p>
                 <List className="list-disc list-inside">
@@ -53,9 +53,7 @@ const BillPouch: NextPage = () => {
             <List className="mt-4 m-auto w-fit-content">
               <ListItem className="flex">
                 <Badge>WEBSITE</Badge>
-                <p className="ml-4">
-                  https://billpouch.billme.co.th
-                </p>
+                <p className="ml-4">https://billpouch.billme.co.th</p>
               </ListItem>
               <ListItem className="flex">
                 <Badge>STACK</Badge>

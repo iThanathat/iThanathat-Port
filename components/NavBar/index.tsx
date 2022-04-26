@@ -19,7 +19,9 @@ type NavLinkProps = {
 const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
   const active = path === href;
   return (
-    <div className={`h-full flex items-center ${active ? 'active' : 'inactive'}`}>
+    <div
+      className={`h-full flex items-center ${active ? 'active' : 'inactive'}`}
+    >
       <Link href={href} passHref>
         {children}
       </Link>
@@ -30,7 +32,9 @@ const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
 const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
   return (
     <div
-      className={'w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10 h-12'}
+      className={
+        'w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10 h-12'
+      }
     >
       <div className="flex justify-between items-center h-full">
         <Link href="/" passHref>

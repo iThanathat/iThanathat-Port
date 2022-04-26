@@ -166,7 +166,9 @@ const Introduction = () => {
                   Full Name: Thanathat Surakhup
                 </ListItem>
                 <ListItem className="text-2xl">Part-time Photographer</ListItem>
-                <ListItem className="text-2xl">Into Jazz / Classical Music</ListItem>
+                <ListItem className="text-2xl">
+                  Into Jazz / Classical Music
+                </ListItem>
               </List>
             </motion.div>
           </div>

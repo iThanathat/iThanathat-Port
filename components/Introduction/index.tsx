@@ -36,7 +36,7 @@ const Introduction = () => {
           <motion.div
             className="flex flex-col my-auto"
             initial={{opacity: 0}}
-            animate={{opacity: 1}}
+            animate={{opacity: 1, transition: {duration: 1.0}}}
             exit={{opacity: 0}}
           >
             <h1 className="text-4xl">
@@ -62,7 +62,7 @@ const Introduction = () => {
           <motion.div
             className="flex flex-col mt-6"
             initial={{opacity: 0}}
-            animate={{opacity: 1}}
+            animate={{opacity: 1, transition: {duration: 1.0}}}
             exit={{opacity: 0}}
           >
             <div>
@@ -137,7 +137,7 @@ const Introduction = () => {
             <motion.div
               className="text-primary-content"
               initial={{opacity: 0}}
-              animate={{opacity: 1}}
+              animate={{opacity: 1, transition: {duration: 1.0}}}
               exit={{opacity: 0}}
             >
               <h1 className="text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
@@ -155,17 +155,18 @@ const Introduction = () => {
             <motion.div
               className="text-primary-content"
               initial={{opacity: 0}}
-              animate={{opacity: 1}}
+              animate={{opacity: 1, transition: {duration: 1.0}}}
               exit={{opacity: 0}}
             >
               <h1 className="mt-4 text-4xl text-primary-content pb-1 border-b border-primary-content w-fit-content font-bold">
-                Personal Info
+                whoami ?
               </h1>
               <List className="list-disc list-inside">
                 <ListItem className="text-2xl">
                   Full Name: Thanathat Surakhup
                 </ListItem>
                 <ListItem className="text-2xl">Part-time Photographer</ListItem>
+                <ListItem className="text-2xl">Into Jazz / Classical Music</ListItem>
               </List>
             </motion.div>
           </div>

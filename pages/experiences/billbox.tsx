@@ -31,16 +31,7 @@ const BillBox: NextPage = () => {
             <h1 className="text-2xl mx-auto border-b w-fit-content font-bold">
               BillBox
             </h1>
-            <p className="mt-4">
-              This is
-              <Link href="https://billbox.billme.co.th">
-                <a target="_blank">
-                  <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">
-                    BillBox
-                  </span>
-                </a>
-              </Link>{' '}
-              application. <br />
+            <p className="mt-4 w-1/3 mx-auto text-left indent-10">
               An application for generate and send financial document—e.g.
               Invoice, Tax Invoice, Receipt, etc. <br />
               Sending an invoice to the customer via email, Line, etc., or

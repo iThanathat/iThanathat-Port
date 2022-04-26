@@ -10,7 +10,7 @@ const Experiences: NextPage = () => {
         initial="initial"
         animate="animate"
         exit={{opacity: 0}}
-        className="mt-12"
+        className="mt-12 overflow-scroll"
       >
         <Works />
       </motion.div>

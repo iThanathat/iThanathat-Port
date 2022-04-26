@@ -10,5 +10,6 @@ Visit website at: [https://ithanathat.space/](https://ithanathat.space/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Daisy UI](https://daisyui.com/)
 - [Google TypeScript Style](https://github.com/google/gts)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 Inspired by: [https://craftz.dog/](https://www.craftz.dog/)

@@ -187,7 +187,6 @@ const Introduction = () => {
             alt="iThanathat"
             width={370}
             height={370}
-            layout="responsive"
             className="rounded-full"
           />
         </div>

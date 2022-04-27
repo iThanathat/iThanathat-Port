@@ -38,3 +38,91 @@ a {
 .inactive:hover {
   @apply underline;
 }
+
+.arrow-right {
+  @apply relative top-1/2 w-fit-content;
+  left: 105%;
+}
+
+.arrow-left {
+  @apply relative top-1/2 right-16 w-fit-content text-left;
+}
+
+.profile-image {
+  width: 370px;
+  height: 370px;
+  @apply rounded-full;
+}
+
+.content-normal {
+  @apply text-xl;
+}
+
+.content-large {
+  @apply text-2xl;
+}
+
+.content-title {
+  @apply text-4xl;
+}
+
+.work-list-container {
+  @apply pt-4 h-full w-full m-auto grid grid-cols-2;
+}
+
+.introduction-page-container {
+  @apply h-screen flex items-center justify-center;
+}
+
+.introduction-page-container .introduction-content-left {
+  @apply container p-2 w-1/2;
+}
+
+.introduction-page-container .introduction-content-right {
+  @apply container px-28 py-14 w-1/2 h-full bg-primary;
+}
+
+@media screen and (max-width: 768px) {
+  .work-list-container {
+    @apply grid grid-cols-1;
+  }
+
+  .introduction-page-container {
+    @apply h-full flex-col items-center justify-center mt-16;
+  }
+
+  .introduction-page-container .introduction-content-left {
+    @apply container p-2 w-full h-1/2;
+  }
+
+  .introduction-page-container .introduction-content-right {
+    @apply w-full p-8 h-1/2;
+  }
+
+  .content-normal {
+    @apply text-lg;
+  }
+
+  .content-large {
+    @apply text-xl;
+  }
+
+  .content-title {
+    @apply text-2xl;
+  }
+
+  .arrow-right {
+    left: 100%;
+  }
+
+  .arrow-left {
+    @apply right-6;
+  }
+
+  .profile-image {
+    width: 270px;
+    height: 270px;
+    @apply rounded-full;
+  }
+}
+

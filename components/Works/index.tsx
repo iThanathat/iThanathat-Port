@@ -22,7 +22,7 @@ const Works = () => {
 
   return (
     <div className="h-screen">
-      <div className="pt-4 h-full w-full m-auto grid grid-cols-1">
+      <div className="work-list-container">
         {WorksDetail.map(detail => {
           return (
             <motion.div

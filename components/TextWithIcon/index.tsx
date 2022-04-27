@@ -15,7 +15,7 @@ const TextWithEmoji: React.FC<TextWithEmojiProps> = ({
         textColor ? textColor : 'text-primary-content'
       } flex items-center`}
     >
-      <p className="text-2xl">{icon}</p>
+      <p className="content-large">{icon}</p>
       <p className="ml-6 text-xl">{text}</p>
     </div>
   );

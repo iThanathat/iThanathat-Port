@@ -28,7 +28,7 @@ const Billme: NextPage = () => {
                 <p>Back</p>
               </div>
             </Link>
-            <h1 className="text-2xl mx-auto border-b w-fit-content font-bold">
+            <h1 className="content-large mx-auto border-b w-fit-content font-bold">
               Billme Landing Page
             </h1>
             <p className="mt-4">

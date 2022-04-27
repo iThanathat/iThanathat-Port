@@ -25,7 +25,7 @@ const BillPouch: NextPage = () => {
                 <p>Back</p>
               </div>
             </Link>
-            <h1 className="text-2xl mx-auto border-b w-fit-content font-bold">
+            <h1 className="content-large mx-auto border-b w-fit-content font-bold">
               BillPouch
             </h1>
             <p className="mt-4 w-1/3 mx-auto text-left indent-10">

@@ -48,7 +48,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
                 className="cursor-pointer rounded-full bg-primary"
               />
               <p
-                className={`text-xl ml-2 ${
+                className={`content-normal ml-2 ${
                   theme === 'dark' ? 'text-white' : 'text-black'
                 } cursor-pointer`}
               >
@@ -61,7 +61,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           <div className="h-full">
             <NavLink path={path} href="/experiences">
               <p
-                className={`text-xl ${
+                className={`content-normal ${
                   theme === 'dark' ? 'text-white' : 'text-black'
                 } cursor-pointer mx-2`}
               >
@@ -84,11 +84,11 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
                     }`}
                   />
                   <p
-                    className={`ml-2 text-xl ${
+                    className={`ml-2 content-normal ${
                       theme === 'dark' ? 'text-white' : 'text-black'
                     } cursor-pointer hover:underline`}
                   >
-                    Source Code
+                    Source
                   </p>
                 </div>
               </a>
@@ -99,7 +99,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           <FontAwesomeIcon
             icon={theme === 'corporate' ? SolidIcon.faMoon : SolidIcon.faSun}
             size="2x"
-            className={`text-xl ${
+            className={`content-normal ${
               theme === 'dark' ? 'text-white' : 'text-black'
             } transition ease-in duration-300`}
           />

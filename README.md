@@ -12,4 +12,8 @@ Visit website at: [https://ithanathat.space/](https://ithanathat.space/)
 - [Google TypeScript Style](https://github.com/google/gts)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
+## License
+
+MIT License.
+
 Inspired by: [https://craftz.dog/](https://www.craftz.dog/)

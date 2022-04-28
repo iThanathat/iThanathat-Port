@@ -23,7 +23,7 @@ const Billme: NextPage = () => {
         <div className="h-screen">
           <div className="container p-2 m-auto text-center">
             <Link href="/experiences">
-              <div className="relative w-fit-content top-14 left-1/4 cursor-pointer">
+              <div className="back-button">
                 <FontAwesomeIcon icon={faArrowLeft} size="2x" />
                 <p>Back</p>
               </div>

@@ -20,7 +20,7 @@ const BillPouch: NextPage = () => {
         <div className="h-screen overflow-scroll">
           <div className="container p-2 m-auto text-center">
             <Link href="/experiences">
-              <div className="relative w-fit-content top-14 left-1/4 cursor-pointer">
+              <div className="back-button">
                 <FontAwesomeIcon icon={faArrowLeft} size="2x" />
                 <p>Back</p>
               </div>
@@ -28,7 +28,7 @@ const BillPouch: NextPage = () => {
             <h1 className="content-large mx-auto border-b w-fit-content font-bold">
               BillPouch
             </h1>
-            <p className="mt-4 w-1/3 mx-auto text-left indent-10">
+            <p className="page-paragraph">
               An application for receiving an invoice created by
               <Link href="https://billbox.billme.co.th">
                 <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">

@@ -20,7 +20,7 @@ const Billme: NextPage = () => {
         exit={{opacity: 0}}
         className="mt-12"
       >
-        <div className="h-screen">
+        <div className="h-screen overflow-scroll">
           <div className="container p-2 m-auto text-center">
             <Link href="/experiences">
               <div className="back-button">

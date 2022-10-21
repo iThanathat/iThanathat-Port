@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from 'next/link';
 import {
   faFacebook,
@@ -53,7 +53,7 @@ const Introduction = () => {
               </div>
               <div className="text-primary-content flex items-center mt-1">
                 <p className="content-large">
-                  Working at Billme Venture Co., Ltd.
+                  Working at Skootar Beyond Co., Ltd
                 </p>
               </div>
             </div>
@@ -187,7 +187,7 @@ const Introduction = () => {
             alt="iThanathat"
             width={370}
             height={370}
-            className="rounded-full"
+            className="rounded-full m-auto"
           />
         </div>
       </div>

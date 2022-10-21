@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import {motion} from 'framer-motion';
 import {WorksDetail} from './detail';
 import {useRouter} from 'next/router';

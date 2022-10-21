@@ -1,7 +1,7 @@
 import {NextPage} from 'next';
 import Layout from '../../components/Layouts/page';
 import {motion} from 'framer-motion';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import {
   faArrowLeft,
   faArrowUpRightFromSquare,

@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import * as SolidIcon from '@fortawesome/free-solid-svg-icons';
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from 'next/link';
 
 type NavBarProps = {
@@ -45,7 +45,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
                 alt="iThanathat"
                 width={30}
                 height={30}
-                className="cursor-pointer rounded-full bg-primary"
+                className="logo-image"
               />
               <p
                 className={`content-normal ml-2 ${

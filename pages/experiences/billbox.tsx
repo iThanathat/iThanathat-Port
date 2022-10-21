@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {List, ListItem} from '../../components/List';
 import Badge from '../../components/Badge';
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 const BillBox: NextPage = () => {
   return (

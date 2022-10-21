@@ -6,7 +6,7 @@ import Badge from '../../components/Badge';
 import {List, ListItem} from '../../components/List';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 const BillPouch: NextPage = () => {
   return (

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "npm run fix && next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "fix": "npx prettier --write pages/ components __tests__"
   },
   "dependencies": {

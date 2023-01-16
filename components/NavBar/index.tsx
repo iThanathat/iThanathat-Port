@@ -1,11 +1,11 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import * as SolidIcon from '@fortawesome/free-solid-svg-icons';
-import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import Image from 'next/future/image';
-import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as SolidIcon from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "next/future/image";
+import Link from "next/link";
 
 type NavBarProps = {
-  theme: 'dark' | 'corporate';
+  theme: "dark" | "corporate";
   onToggleTheme: () => void;
   path: string;
 };
@@ -16,11 +16,11 @@ type NavLinkProps = {
   path: string;
 };
 
-const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, path, children }) => {
   const active = path === href;
   return (
     <div
-      className={`h-full flex items-center ${active ? 'active' : 'inactive'}`}
+      className={`h-full flex items-center ${active ? "active" : "inactive"}`}
     >
       <Link href={href} passHref>
         {children}
@@ -29,11 +29,11 @@ const NavLink: React.FC<NavLinkProps> = ({href, path, children}) => {
   );
 };
 
-const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
+const NavBar: React.FC<NavBarProps> = ({ onToggleTheme, theme, path }) => {
   return (
     <div
       className={
-        'w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10 h-12'
+        "w-full bg-base-100 bg-opacity-75 backdrop-blur-sm fixed z-10 h-12"
       }
     >
       <div className="flex justify-between items-center h-full">
@@ -49,7 +49,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
               />
               <p
                 className={`content-normal ml-2 ${
-                  theme === 'dark' ? 'text-white' : 'text-black'
+                  theme === "dark" ? "text-white" : "text-black"
                 } cursor-pointer`}
               >
                 iThanathat
@@ -62,7 +62,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
             <NavLink path={path} href="/experiences">
               <p
                 className={`content-normal ${
-                  theme === 'dark' ? 'text-white' : 'text-black'
+                  theme === "dark" ? "text-white" : "text-black"
                 } cursor-pointer mx-2`}
               >
                 Experiences
@@ -71,7 +71,7 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
           </div>
           <div>
             <Link
-              href={'https://github.com/iThanathat/iThanathat-Space'}
+              href={"https://github.com/iThanathat/iThanathat-Space"}
               passHref
             >
               <a target="_blank">
@@ -80,12 +80,12 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
                     icon={faGithub}
                     size="2x"
                     className={`text-primary-content ${
-                      theme === 'dark' ? 'text-white' : 'text-black'
+                      theme === "dark" ? "text-white" : "text-black"
                     }`}
                   />
                   <p
                     className={`ml-2 content-normal ${
-                      theme === 'dark' ? 'text-white' : 'text-black'
+                      theme === "dark" ? "text-white" : "text-black"
                     } cursor-pointer hover:underline`}
                   >
                     Source
@@ -97,10 +97,10 @@ const NavBar: React.FC<NavBarProps> = ({onToggleTheme, theme, path}) => {
         </div>
         <div onClick={() => onToggleTheme()} className="ml-6 cursor-pointer">
           <FontAwesomeIcon
-            icon={theme === 'corporate' ? SolidIcon.faMoon : SolidIcon.faSun}
+            icon={theme === "corporate" ? SolidIcon.faMoon : SolidIcon.faSun}
             size="2x"
             className={`content-normal ${
-              theme === 'dark' ? 'text-white' : 'text-black'
+              theme === "dark" ? "text-white" : "text-black"
             } transition ease-in duration-300`}
           />
         </div>

@@ -1,7 +1,7 @@
-import {NextPage} from 'next';
-import Works from '../../components/Works';
-import {motion} from 'framer-motion';
-import Layout from '../../components/Layouts/page';
+import { NextPage } from "next";
+import Works from "../../components/Works";
+import { motion } from "framer-motion";
+import Layout from "../../components/Layouts/page";
 
 const Experiences: NextPage = () => {
   return (
@@ -9,7 +9,7 @@ const Experiences: NextPage = () => {
       <motion.div
         initial="initial"
         animate="animate"
-        exit={{opacity: 0}}
+        exit={{ opacity: 0 }}
         className="mt-12 overflow-scroll"
       >
         <Works />

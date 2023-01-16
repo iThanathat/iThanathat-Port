@@ -1,15 +1,15 @@
-import {NextPage} from 'next';
-import Layout from '../../components/Layouts/page';
-import {motion} from 'framer-motion';
-import Image from 'next/future/image';
+import { NextPage } from "next";
+import Layout from "../../components/Layouts/page";
+import { motion } from "framer-motion";
+import Image from "next/future/image";
 import {
   faArrowLeft,
   faArrowUpRightFromSquare,
-} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Badge from '../../components/Badge';
-import {List, ListItem} from '../../components/List';
-import Link from 'next/link';
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Badge from "../../components/Badge";
+import { List, ListItem } from "../../components/List";
+import Link from "next/link";
 
 const Billme: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Billme: NextPage = () => {
       <motion.div
         initial="initial"
         animate="animate"
-        exit={{opacity: 0}}
+        exit={{ opacity: 0 }}
         className="mt-12"
       >
         <div className="h-screen overflow-scroll">
@@ -37,7 +37,7 @@ const Billme: NextPage = () => {
                 <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">
                   BillBox
                 </span>
-              </Link>{' '}
+              </Link>{" "}
               application. <br />
               <div className="text-left mx-auto w-fit-content">
                 <p className="text-xl mt-4">My part in this website is:</p>
@@ -53,7 +53,7 @@ const Billme: NextPage = () => {
                 <Link href="https://billme.co.th" passHref>
                   <a target="_blank">
                     <p className="ml-4 hover:underline cursor-pointer">
-                      https://billme.co.th{' '}
+                      https://billme.co.th{" "}
                       <FontAwesomeIcon
                         icon={faArrowUpRightFromSquare}
                         size="1x"

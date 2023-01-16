@@ -1,34 +1,34 @@
-import Head from 'next/head';
-import {NextRouter} from 'next/router';
-import {useEffect} from 'react';
-import {useState} from 'react';
-import Footer from '../Footer';
-import NavBar from '../NavBar';
+import Head from "next/head";
+import { NextRouter } from "next/router";
+import { useEffect } from "react";
+import { useState } from "react";
+import Footer from "../Footer";
+import NavBar from "../NavBar";
 
 type LayoutProps = {
   children: React.ReactNode;
   router: NextRouter;
 };
 
-const Layout: React.FC<LayoutProps> = ({children, router}) => {
-  const [theme, setTheme] = useState<'dark' | 'corporate'>('corporate');
+const Layout: React.FC<LayoutProps> = ({ children, router }) => {
+  const [theme, setTheme] = useState<"dark" | "corporate">("corporate");
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = localStorage.getItem("theme");
     if (currentTheme) {
-      if (currentTheme === 'dark') {
-        setTheme('dark');
+      if (currentTheme === "dark") {
+        setTheme("dark");
       } else {
-        setTheme('corporate');
+        setTheme("corporate");
       }
     } else {
-      localStorage.setItem('theme', 'corporate');
+      localStorage.setItem("theme", "corporate");
     }
   }, []);
 
   const onToggleTheme = () => {
-    setTheme(theme === 'dark' ? 'corporate' : 'dark');
-    localStorage.setItem('theme', `${theme === 'dark' ? 'corporate' : 'dark'}`);
+    setTheme(theme === "dark" ? "corporate" : "dark");
+    localStorage.setItem("theme", `${theme === "dark" ? "corporate" : "dark"}`);
   };
 
   return (

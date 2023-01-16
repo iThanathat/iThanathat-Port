@@ -1,15 +1,15 @@
-import {NextPage} from 'next';
-import Layout from '../../components/Layouts/page';
-import {motion} from 'framer-motion';
-import Link from 'next/link';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { NextPage } from "next";
+import Layout from "../../components/Layouts/page";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
   faArrowUpRightFromSquare,
-} from '@fortawesome/free-solid-svg-icons';
-import {List, ListItem} from '../../components/List';
-import Badge from '../../components/Badge';
-import Image from 'next/future/image';
+} from "@fortawesome/free-solid-svg-icons";
+import { List, ListItem } from "../../components/List";
+import Badge from "../../components/Badge";
+import Image from "next/future/image";
 
 const BillBox: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const BillBox: NextPage = () => {
       <motion.div
         initial="initial"
         animate="animate"
-        exit={{opacity: 0}}
+        exit={{ opacity: 0 }}
         className="mt-12"
       >
         <div className="h-screen overflow-scroll">
@@ -50,7 +50,7 @@ const BillBox: NextPage = () => {
                 <Link href="https://billme.co.th" passHref>
                   <a target="_blank">
                     <p className="ml-4 hover:underline cursor-pointer">
-                      https://billbox.billme.co.th{' '}
+                      https://billbox.billme.co.th{" "}
                       <FontAwesomeIcon
                         icon={faArrowUpRightFromSquare}
                         size="1x"

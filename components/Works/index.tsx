@@ -1,7 +1,7 @@
-import Image from 'next/future/image';
-import {motion} from 'framer-motion';
-import {WorksDetail} from './detail';
-import {useRouter} from 'next/router';
+import Image from "next/future/image";
+import { motion } from "framer-motion";
+import { WorksDetail } from "./detail";
+import { useRouter } from "next/router";
 
 const Works = () => {
   const router = useRouter();
@@ -15,7 +15,7 @@ const Works = () => {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       },
     },
   };
@@ -23,7 +23,7 @@ const Works = () => {
   return (
     <div className="h-screen">
       <div className="work-list-container">
-        {WorksDetail.map(detail => {
+        {WorksDetail.map((detail) => {
           return (
             <motion.div
               key={`detail-${detail.alt}`}

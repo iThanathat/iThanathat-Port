@@ -1,12 +1,12 @@
-import {NextPage} from 'next';
-import Layout from '../../components/Layouts/page';
-import {motion} from 'framer-motion';
-import Link from 'next/link';
-import Badge from '../../components/Badge';
-import {List, ListItem} from '../../components/List';
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Image from 'next/future/image';
+import { NextPage } from "next";
+import Layout from "../../components/Layouts/page";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import Badge from "../../components/Badge";
+import { List, ListItem } from "../../components/List";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/future/image";
 
 const BillPouch: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const BillPouch: NextPage = () => {
       <motion.div
         initial="initial"
         animate="animate"
-        exit={{opacity: 0}}
+        exit={{ opacity: 0 }}
         className="mt-12"
       >
         <div className="h-screen overflow-scroll">
@@ -34,7 +34,7 @@ const BillPouch: NextPage = () => {
                 <span className="ml-1 bg-primary text-primary-content cursor-pointer px-1 rounded">
                   BillBox
                 </span>
-              </Link>{' '}
+              </Link>{" "}
               . Check invoices sent from the merchant, and you can immediately
               pay and notify your merchant by uploading a payment slip. And if
               your merchant integrates the system with a payment gateway, you

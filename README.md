@@ -10,6 +10,8 @@ Visit website at: [https://ithanathat.space/](https://ithanathat.space/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Daisy UI](https://daisyui.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## License
 

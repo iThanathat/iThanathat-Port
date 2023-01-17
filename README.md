@@ -9,7 +9,6 @@ Visit website at: [https://ithanathat.space/](https://ithanathat.space/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Daisy UI](https://daisyui.com/)
-- [Google TypeScript Style](https://github.com/google/gts)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## License

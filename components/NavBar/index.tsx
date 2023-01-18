@@ -11,15 +11,22 @@ type NavBarProps = {
 };
 
 type NavLinkProps = {
+  testId?: string;
   children: React.ReactNode;
   href: string;
   path: string;
 };
 
-const NavLink: React.FC<NavLinkProps> = ({ href, path, children }) => {
+export const NavLink: React.FC<NavLinkProps> = ({
+  href,
+  path,
+  children,
+  testId,
+}) => {
   const active = path === href;
   return (
     <div
+      data-testid={testId}
       className={`h-full flex items-center ${active ? "active" : "inactive"}`}
     >
       <Link href={href} passHref>
@@ -59,7 +66,11 @@ const NavBar: React.FC<NavBarProps> = ({ onToggleTheme, theme, path }) => {
         </Link>
         <div className="flex h-full items-center justify-evenly w-80">
           <div className="h-full">
-            <NavLink path={path} href="/experiences">
+            <NavLink
+              testId="experiences-path-link"
+              path={path}
+              href="/experiences"
+            >
               <p
                 className={`content-normal ${
                   theme === "dark" ? "text-white" : "text-black"
@@ -95,8 +106,13 @@ const NavBar: React.FC<NavBarProps> = ({ onToggleTheme, theme, path }) => {
             </Link>
           </div>
         </div>
-        <div onClick={() => onToggleTheme()} className="ml-6 cursor-pointer">
+        <div
+          data-testid="toggle-theme-button"
+          onClick={() => onToggleTheme()}
+          className="ml-6 cursor-pointer"
+        >
           <FontAwesomeIcon
+            data-testid={theme === "corporate" ? "moon-button" : "sun-button"}
             icon={theme === "corporate" ? SolidIcon.faMoon : SolidIcon.faSun}
             size="2x"
             className={`content-normal ${

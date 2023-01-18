@@ -22,6 +22,7 @@ const Works = () => {
 
   return (
     <div className="h-screen">
+      <h1 className="text-center text-4xl mt-6">My Experiences</h1>
       <div className="work-list-container">
         {WorksDetail.map((detail) => {
           return (

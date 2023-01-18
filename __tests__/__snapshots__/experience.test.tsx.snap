@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience page Renders experience page unchanged 1`] = `
+<div>
+  <div
+    style="position: relative; opacity: 0; transform: translateX(0px) translateY(20px) translateZ(0);"
+  >
+    <div
+      class="mt-12 overflow-scroll"
+    >
+      <div
+        class="h-screen"
+      >
+        <h1
+          class="text-center text-4xl mt-6"
+        >
+          My Experiences
+        </h1>
+        <div
+          class="work-list-container"
+        >
+          <div
+            class="p-2 h-fit-content w-fit text-center cursor-pointer mx-auto"
+            style="opacity: 0; transform: translateY(60px) translateZ(0);"
+          >
+            <img
+              alt="billme-website"
+              class="rounded-lg"
+              data-nimg="future"
+              decoding="async"
+              height="250"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2Fbillme-website.png&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fbillme-website.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fbillme-website.png&w=828&q=75 2x"
+              style="color: transparent;"
+              width="400"
+            />
+            <div
+              class="mt-4"
+            >
+              <h1
+                class="text-xl"
+              >
+                Billme Landing Page
+              </h1>
+              <p>
+                Advertisement landing page for Billme
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-2 h-fit-content w-fit text-center cursor-pointer mx-auto"
+            style="opacity: 0; transform: translateY(60px) translateZ(0);"
+          >
+            <img
+              alt="billbox-website"
+              class="rounded-lg"
+              data-nimg="future"
+              decoding="async"
+              height="250"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2Fbillbox-website-2.png&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fbillbox-website-2.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fbillbox-website-2.png&w=828&q=75 2x"
+              style="color: transparent;"
+              width="400"
+            />
+            <div
+              class="mt-4"
+            >
+              <h1
+                class="text-xl"
+              >
+                BillBox
+              </h1>
+              <p>
+                An application for generate and send financial document
+              </p>
+            </div>
+          </div>
+          <div
+            class="p-2 h-fit-content w-fit text-center cursor-pointer mx-auto"
+            style="opacity: 0; transform: translateY(60px) translateZ(0);"
+          >
+            <img
+              alt="billpouch-website"
+              class="rounded-lg"
+              data-nimg="future"
+              decoding="async"
+              height="250"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2Fbillpouch-website.png&w=828&q=75"
+              srcset="/_next/image?url=%2Fimages%2Fbillpouch-website.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fbillpouch-website.png&w=828&q=75 2x"
+              style="color: transparent;"
+              width="400"
+            />
+            <div
+              class="mt-4"
+            >
+              <h1
+                class="text-xl"
+              >
+                BillPouch
+              </h1>
+              <p>
+                An application for receiving an invoice created by BillBox
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
